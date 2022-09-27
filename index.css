@@ -1,0 +1,39 @@
+.title {
+    color:rgb(98, 146, 188);
+}
+.second {
+    background-color: brown;
+}
+.links {
+    padding:20px 10px;
+    background:#eee;
+    color:red;
+}
+.links1 {
+    padding:20px 10px;
+    background:#eee;
+    color:blue;
+}
+.links2 { 
+    padding:20px 10px;
+    background:#eee;
+    color:green;
+}
+ .card {
+    background:#eee;
+ }
+ .card__title {
+    margin: bottom 10px;
+ }
+ .card__content {
+    color:blueviolet;
+ }
+.card__title--is-red {
+    color:red;
+}
+.card__title--is-blue {
+    color:blue;
+}
+.card__title--is-green {
+    color:green;
+}
