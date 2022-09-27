@@ -21,12 +21,21 @@
 }
  .card {
     background:#eee;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 80px;
+    border-bottom: 1px solid black;
  }
  .card__title {
-    margin: bottom 10px;
+    margin:0;
  }
  .card__content {
     color:blueviolet;
+    opacity: 0.5;
+    margin: 0;
+
  }
 .card__title--is-red {
     color:red;
@@ -36,4 +45,11 @@
 }
 .card__title--is-green {
     color:green;
+}
+.cards-container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+
 }
