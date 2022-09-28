@@ -12,16 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Quickcheese00/test-task.git"
+    "url": "git+https://github.com/Towikk01/test-repo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Quickcheese00/test-task/issues"
+    "url": "https://github.com/Towikk01/test-repo/issues"
   },
-  "homepage": "https://github.com/Quickcheese00/test-task#readme",
-  "devDependencies": {
-  },
-  "dependencies": {
-  }
+  "homepage": "https://github.com/Towikk01/test-repo#readme",
+  "devDependencies": {},
+  "dependencies": {}
 }
