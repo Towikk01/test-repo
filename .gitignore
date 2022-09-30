@@ -2,3 +2,4 @@ node_modules/
 hot
 mix-manifest.json
 .idea
+dist/
