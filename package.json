@@ -1,0 +1,34 @@
+{
+  "name": "test-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy": "cp index.html dist/ && cp -R src/img dist/ && mkdir dist/dist && cp dist/index.css dist/dist/",
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "start": "npx mix watch --hot",
+    "prod": "npm run production && npm run copy",
+    "production": "npx mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spasea/test-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spasea/test-repo/issues"
+  },
+  "homepage": "https://github.com/spasea/test-repo#readme",
+  "dependencies": {
+    "laravel-mix": "^6.0.49"
+  },
+  "devDependencies": {
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^12.1.0"
+  }
+}
