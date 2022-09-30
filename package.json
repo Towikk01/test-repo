@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "test-repo",
+=======
+  "name": "1",
+>>>>>>> f6fe5b0c60bfa3f1124693412d319f643ac44790
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
