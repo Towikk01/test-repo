@@ -1,13 +1,30 @@
 .category-furniture-list {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1820px;
+    box-sizing: border-box;
+
     
 }
 .category-furniture { 
     display:flex;
     flex-direction: column;
+    align-items: center;
     &__icon {
 
     }
-    &__title {}
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
