@@ -3,3 +3,4 @@ hot
 mix-manifest.json
 .idea
 dist/
+.vscode/
