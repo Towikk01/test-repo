@@ -1,0 +1,10 @@
+@import "product.scss";
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  margin: 87px 0;
+  list-style: none;
+  grid-gap: 30px;
+}
