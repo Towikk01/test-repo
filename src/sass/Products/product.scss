@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   transition: 300ms all ease;
+  @media (max-width: 375px) {
+    font-size: 37px;
+  }
 
   &:hover {
     transform: translateY(-25px);
