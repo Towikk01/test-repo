@@ -1,0 +1,39 @@
+.header-info-contacts {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 2px;
+  padding: 0px 43px;
+  &__phone {
+    color: #1e2e36;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #1e2e36;
+    text-decoration: none;
+    padding: 0 60px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  &-phone-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #1e2e36;
+    text-decoration: none;
+  }
+  &-phone-button {
+    transform: rotate(-90deg);
+    border-style: none;
+    background-color: white;
+  }
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    gap: 27px;
+    padding: 0px;
+    margin-left: 19px;
+  }
+}

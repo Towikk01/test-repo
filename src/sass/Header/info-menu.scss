@@ -5,7 +5,27 @@
   justify-content: space-between;
   gap: 12px;
   padding: 0px 43px;
-  &__link {
+  &__item {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      background-color: #44c697;
+      left: -1px;
+      right: -1px;
+      bottom: -3px;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: 300ms ease all;
+    }
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+  &__item-link {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #1e2e36;
