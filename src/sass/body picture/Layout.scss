@@ -1,4 +1,4 @@
-.body-main-section__picture {
+.section-hero {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -10,82 +10,115 @@
   background-color: #ffffff;
   position: absolute;
   z-index: 1;
-}
-.body-main-section__new {
-  padding: 46px;
-  margin: 55px 0px 0px 46px;
-}
-.body-main-section__text-one {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  weight: 700;
-  font-size: 36px;
-  margin: -7px 0px 0px 116px;
-}
-.body-main-section__text-two {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 125%;
-  text-align: center;
-  margin: 0px;
-}
-.body-main-section__number-list {
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  font-style: normal;
-  font-size: 34px;
-  margin: 40px 0 0 11px;
-  &-arrows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px 0px 20px;
+  box-sizing: border-box;
+
+  &::before {
+    background-color: #44c697;
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 15px;
+  }
+
+  &__new {
+    margin: 0;
+  }
+  &__text-one {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin: 0;
+    font-size: 36px;
+    margin-top: 40px;
+  }
+  &__text-two {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 125%;
+    text-align: center;
+    margin: 0;
+  }
+  &__numbers-wrapper {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 55px;
+  }
+  &__number-current {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-size: 34px;
+    margin: 0;
+    line-height: 1;
+  }
+  &__number-all {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    margin: 0;
+
+    padding: 8px 0 0px 2px;
+  }
+  &__arrows {
     text-decoration: none;
     background-color: #ffffff;
     border: 0;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0 0 0 198px;
+    margin-top: 10px;
   }
-}
-.body-main-section__action {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #44c697;
-  text-transform: uppercase;
-  text-align: center;
-  font-style: normal;
-  color: #ffffff;
-  margin: 30px 0px 0px 130px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 125%;
-  text-decoration: none;
-  align-self: center;
-  padding: 12px 20px;
-  min-width: 205px;
-  border-radius: 3px;
-  border: 2px solid #44c697;
-  box-sizing: border-box;
-  transition: 300ms all ease;
+  &__action {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #44c697;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: normal;
+    margin-top: 30px;
 
-  &:hover {
-    color: #44c697;
-    background-color: #ffffff;
-  }
-
-  &:focus,
-  &:active {
-    background-color: #ffffff;
-    box-shadow: 0 0 0 3px rgb(68 198 151 / 50%);
-    color: #44c697;
-  }
-  &-text {
-    text-decoration: none;
     color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    text-decoration: none;
+    align-self: center;
+    padding: 12px 20px;
+    min-width: 205px;
+    border-radius: 3px;
+    border: 2px solid #44c697;
+    box-sizing: border-box;
+    transition: 300ms all ease;
+
+    &:hover {
+      color: #44c697;
+      background-color: #ffffff;
+    }
+
+    &:focus,
+    &:active {
+      background-color: #ffffff;
+      box-shadow: 0 0 0 3px rgb(68 198 151 / 50%);
+      color: #44c697;
+    }
+    &-text {
+      text-decoration: none;
+      color: #ffffff;
+    }
   }
-}
-.body-main-section__picture-big {
-  position: relative;
-  z-index: 0;
-  max-width: 100%;
+  &__picture-big {
+    position: relative;
+    z-index: 0;
+    max-width: 100%;
+  }
 }
