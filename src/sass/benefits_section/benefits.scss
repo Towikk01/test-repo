@@ -1,6 +1,9 @@
 .benefits-wrapper {
-  padding: 70px 52px 62px 45px;
-
+  padding-top: 58px;
+  padding-bottom: 62px;
+  .main-title {
+    margin: 39px 0px 53px 0px;
+  }
   &__menu {
     display: flex;
     align-items: center;
@@ -11,14 +14,31 @@
     font-style: normal;
     font-weight: 700;
     width: 586px;
-
-    &-text-one {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    &:hover {
+      .benefits-wrapper__menu-window__text {
+        transform: none;
+      }
+    }
+    &__text {
+      padding: 0px 30px 0px 29px;
       position: absolute;
       z-index: 1;
-      font-size: 36px;
+      bottom: 0;
+      transform: translateY(60px);
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      transition: 300ms all ease;
+    }
+    &__text-one {
+      font-size: 35px;
       color: #ffffff;
       line-height: 125%;
-      margin: 0;
+      position: relative;
+      margin: 0 0 15px 0;
 
       &::after {
         content: "";
@@ -31,9 +51,7 @@
         max-width: 100%;
       }
     }
-    &-text-two {
-      position: absolute;
-      z-index: 1;
+    &__text-two {
     }
   }
   &__menu-window-picture {

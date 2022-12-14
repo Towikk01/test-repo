@@ -1,0 +1,49 @@
+.about-us {
+  padding-top: 65px;
+  padding-bottom: 62px;
+
+  &__wrapper {
+    position: relative;
+
+    &-image {
+      display: block;
+      margin-left: auto;
+    }
+
+    &__text-wrapper {
+      background-color: #ffffff;
+      bottom: 100px;
+      box-sizing: border-box;
+      left: 0;
+      padding: 51px 20px 50px 51px;
+      top: 100px;
+      position: absolute;
+      width: 791px;
+
+      &::after {
+        background-color: #44c697;
+        border-radius: 0 3px 3px 0;
+        bottom: 0;
+        content: "";
+        position: absolute;
+        right: -15px;
+        top: 0;
+        width: 15px;
+      }
+
+      &-item {
+        line-height: 125%;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 0 18px;
+
+        &--is-bold {
+          color: #44c697;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
