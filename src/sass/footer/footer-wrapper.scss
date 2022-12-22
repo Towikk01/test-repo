@@ -32,7 +32,6 @@
         letter-spacing: -1.5px;
         line-height: 1.142;
         text-transform: uppercase;
-        transform: translateY(-1px);
       }
 
       &-item {
@@ -96,7 +95,20 @@
         }
       }
       &__item {
-        padding-bottom: 15px;
+        margin-bottom: 15px;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: "";
+          left: -18px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: #44c697;
+          height: 3px;
+          width: 14px;
+        }
+
         &-special {
           padding-bottom: 15px;
           display: flex;
