@@ -79,11 +79,9 @@
     cursor: pointer;
 
     &-arrow-right {
-      background-color: black;
-      color: white;
+      background-color: #fff;
       border-radius: 50%;
       border: 1px solid #1e2e36;
-      cursor: not-allowed;
       opacity: unset;
       pointer-events: all;
       width: 32px;
@@ -91,11 +89,24 @@
       fill: none;
       display: flex;
       justify-content: center;
-      transform: rotate(180deg);
-      background-color: black;
-      color: white;
-      padding: 9px 0 0 0;
+      padding: 8px;
       cursor: pointer;
+      transform: rotate(180deg);
+      &:hover {
+        background-color: #1e2e36;
+        color: white;
+        transition: 0.3s;
+        border-radius: 50%;
+        border: 3px solid #1e2e36;
+        box-shadow: 0 0 0 3px rgb(0 0 0 / 50%);
+
+        &:focus,
+        &:active {
+          background-color: #1e2e36;
+          box-shadow: 0 0 0 3px rgb(0 0 0/ 50%);
+          color: white;
+        }
+      }
     }
 
     &-arrow-left {
@@ -112,6 +123,21 @@
       justify-content: center;
       padding: 8px;
       cursor: pointer;
+      &:hover {
+        background-color: #1e2e36;
+        color: white;
+        transition: 0.3s;
+        border-radius: 50%;
+        border: 3px solid #1e2e36;
+        box-shadow: 0 0 0 3px rgb(0 0 0 / 50%);
+
+        &:focus,
+        &:active {
+          background-color: #1e2e36;
+          box-shadow: 0 0 0 3px rgb(0 0 0/ 50%);
+          color: white;
+        }
+      }
     }
   }
   &__action {
