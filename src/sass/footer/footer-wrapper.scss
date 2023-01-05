@@ -109,6 +109,12 @@
           width: 14px;
         }
 
+        &:hover {
+          &::before {
+            transform: translateX(-10px) translateY(-50%);
+            transition: 500ms;
+          }
+        }
         &-special {
           padding-bottom: 15px;
           display: flex;
@@ -125,6 +131,11 @@
         line-height: 125%;
         text-decoration: none;
         text-transform: uppercase;
+
+        &:hover {
+          color: #44c697;
+          transition: 200ms;
+        }
 
         &-special {
           font-size: 16px;
