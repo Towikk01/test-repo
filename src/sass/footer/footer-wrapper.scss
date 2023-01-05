@@ -126,6 +126,14 @@
         text-decoration: none;
         text-transform: uppercase;
 
+        &:hover {
+          color: #44c697;
+          transition: 300ms;
+          .footer-wrapper__navigation__item &::before {
+            transform: scaleX(-10px);
+          }
+        }
+
         &-special {
           font-size: 16px;
           font-family: Arial, Helvetica, sans-serif;
