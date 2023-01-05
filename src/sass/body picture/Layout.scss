@@ -79,31 +79,10 @@
     padding: 12px 0px 0 0;
     cursor: pointer;
 
-    &-arrow-right {
-      background-color: black;
-      color: white;
-      border-radius: 50%;
-      border: 1px solid #1e2e36;
-      cursor: not-allowed;
-      opacity: unset;
-      pointer-events: all;
-      width: 32px;
-      height: 31px;
-      fill: none;
-      display: flex;
-      justify-content: center;
-      transform: rotate(180deg);
-      background-color: black;
-      color: white;
-      padding: 9px 0 0 0;
-      cursor: pointer;
-    }
-
-    &-arrow-left {
+    &-arrow {
       background-color: #fff;
       border-radius: 50%;
       border: 1px solid #1e2e36;
-      cursor: not-allowed;
       opacity: unset;
       pointer-events: all;
       width: 32px;
@@ -113,6 +92,25 @@
       justify-content: center;
       padding: 8px;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      &--is-right {
+        transform: rotate(-180deg);
+      }
+      &:hover {
+        background-color: #1e2e36;
+        color: white;
+        transition: 400ms;
+      }
+
+      &:focus,
+      &:active {
+        opacity: 80%;
+        box-shadow: 0 0 0 3px rgb(0 0 0 / 50%);
+        outline: none;
+        background-color: #1e2e36;
+      }
     }
   }
   &__action {
