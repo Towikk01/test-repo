@@ -59,6 +59,10 @@
     &-label {
       display: flex;
       margin-bottom: 15px;
+      border: 1px solid #1e2e36;
+      border-radius: 3px;
+      box-sizing: border-box;
+
       &-button {
         min-width: 100%;
         height: 52px;
@@ -73,11 +77,6 @@
         border: 2px solid #44c697;
         cursor: pointer;
         transition: 300ms ease-in-out;
-
-        &:hover {
-          color: #44c697;
-          background-color: white;
-        }
       }
       &-input {
         width: 100%;
@@ -95,6 +94,19 @@
         height: 51px;
         line-height: 1.25;
         transition: 0.3s ease-in-out;
+        &:hover {
+          color: #44c697;
+          background-color: white;
+          outline: none;
+          transition: 300ms;
+        }
+        &:focus,
+        &:active {
+          outline: none;
+          background-color: #ffffff;
+          box-shadow: 0 0 0 3px rgb(0 0 0/ 50%);
+          color: #1e2e36;
+        }
       }
     }
   }
