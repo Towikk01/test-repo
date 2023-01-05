@@ -34,4 +34,16 @@
   &--is-big {
     padding: 11px 42px;
   }
+  &:hover {
+    background-color: transparent;
+    color: #44c697;
+  }
+
+  &:focus,
+  &:active {
+    background-color: transparent;
+    box-shadow: 0 0 0 3px rgb(68 198 151 / 50%);
+    color: #44c697;
+    outline: none;
+  }
 }
