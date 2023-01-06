@@ -34,6 +34,9 @@
   &--is-big {
     padding: 11px 42px;
   }
+  &--is-normal {
+    min-width: 433px;
+  }
   &:hover {
     background-color: transparent;
     color: #44c697;
