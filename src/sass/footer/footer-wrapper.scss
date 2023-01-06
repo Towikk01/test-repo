@@ -98,17 +98,6 @@
         margin-bottom: 15px;
         position: relative;
 
-        &::before {
-          position: absolute;
-          content: "";
-          left: -18px;
-          top: 50%;
-          transform: translateY(-50%);
-          background-color: #44c697;
-          height: 3px;
-          width: 14px;
-        }
-
         &-special {
           padding-bottom: 15px;
           display: flex;
@@ -125,6 +114,27 @@
         line-height: 125%;
         text-decoration: none;
         text-transform: uppercase;
+        transition: 500ms;
+        &::before {
+          position: absolute;
+          content: "";
+          left: -18px;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: #44c697;
+          height: 3px;
+          width: 14px;
+          transition: 500ms;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+          color: #44c697;
+          outline: none;
+          &::before {
+            transform: translateX(-10px) translateY(-50%);
+          }
+        }
 
         &:hover {
           color: #44c697;
