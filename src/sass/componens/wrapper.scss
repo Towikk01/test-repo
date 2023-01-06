@@ -25,13 +25,25 @@
   border: 2px solid #44c697;
   box-sizing: border-box;
   transition: 300ms all ease;
-  max-width: 100%;
-
+  
+  &--is-big {
+    padding: 11px 41px;
+  }
+  
   &--is-small {
     min-width: 210px;
   }
 
-  &--is-big {
-    padding: 11px 42px;
+  &:hover {
+    background-color: transparent;
+    color: #44c697;
+  }
+
+  &:focus,
+  &:active {
+    background-color: transparent;
+    box-shadow: 0 0 0 3px rgb(68 198 151 / 50%);
+    color: #44c697;
+    outline: none;
   }
 }
