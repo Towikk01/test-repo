@@ -16,6 +16,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    outline: none;
 
     &:hover {
       .header-navigation-menu__item-link-text {
