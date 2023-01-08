@@ -18,7 +18,8 @@
     overflow: hidden;
     display: flex;
     cursor: pointer;
-    &:hover {
+    &:hover,
+    &:focus {
       .benefits-wrapper__menu-window__text {
         transform: none;
       }

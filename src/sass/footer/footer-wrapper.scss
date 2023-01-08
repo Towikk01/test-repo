@@ -61,6 +61,7 @@
         list-style: none;
         &-link {
           text-decoration: none;
+          outline: none;
         }
       }
       &__text {
@@ -80,6 +81,12 @@
           font-weight: 700;
           letter-spacing: 1.1px;
           padding: 0 0 0 3px;
+          outline: none;
+          &:hover,
+          &:focus {
+            color: white;
+            transition: 400ms;
+          }
         }
       }
 
@@ -125,6 +132,7 @@
         line-height: 125%;
         text-decoration: none;
         text-transform: uppercase;
+        outline: none;
 
         &:hover {
           color: #44c697;
@@ -142,6 +150,13 @@
           font-weight: 400;
           line-height: 125%;
           text-decoration: none;
+          outline: none;
+          &:hover,
+          &:focus,
+          &:active {
+            color: #44c697;
+            transition: 400ms;
+          }
         }
       }
     }
