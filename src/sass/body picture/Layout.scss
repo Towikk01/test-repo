@@ -94,6 +94,7 @@
       cursor: pointer;
       display: flex;
       align-items: center;
+      transition: 500ms;
 
       &--is-right {
         transform: rotate(-180deg);

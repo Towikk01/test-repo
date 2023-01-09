@@ -25,6 +25,10 @@
     text-decoration: none;
     position: relative;
     outline: none;
+    &:active,
+    &:focus {
+      outline: none;
+    }
   }
   &__image {
   }

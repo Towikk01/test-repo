@@ -33,5 +33,9 @@
     font-weight: 700;
     text-transform: uppercase;
     outline: none;
+    &:active,
+    &:focus {
+      outline: none;
+    }
   }
 }

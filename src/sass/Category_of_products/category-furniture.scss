@@ -62,6 +62,10 @@
     background: none;
     cursor: pointer;
     outline: none;
+    &:active,
+    &:focus {
+      outline: none;
+    }
     &:hover {
       .category-furniture__title::after {
         transform: scaleX(1);
