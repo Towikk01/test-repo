@@ -7,6 +7,16 @@
   padding: 0px 52px;
   &__item {
     position: relative;
+  }
+  &__item-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #1e2e36;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    position: relative;
     &::after {
       content: "";
       position: absolute;
@@ -19,23 +29,11 @@
       transform-origin: left;
       transition: 300ms ease all;
     }
-    &:hover {
+    &:hover,
+    &:focus {
       &::after {
         transform: scaleX(1);
       }
-    }
-  }
-  &__item-link {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #1e2e36;
-    text-decoration: none;
-    font-weight: 700;
-    text-transform: uppercase;
-    outline: none;
-    &:active,
-    &:focus {
-      outline: none;
     }
   }
 }

@@ -139,7 +139,7 @@
         &:active,
         &:focus {
           color: #44c697;
-          outline: none;
+
           &::before {
             transform: translateX(-10px) translateY(-50%);
           }

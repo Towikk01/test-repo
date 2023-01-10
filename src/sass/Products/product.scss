@@ -27,7 +27,16 @@
     outline: none;
     &:active,
     &:focus {
-      outline: none;
+      transform: translateY(-25px);
+      .product-item__texts-wrapper {
+        background-color: #44c697;
+      }
+      .product-item__title {
+        color: #ffffff;
+      }
+      .product-item__price {
+        color: #ffffff;
+      }
     }
   }
   &__image {
