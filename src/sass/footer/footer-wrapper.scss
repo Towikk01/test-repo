@@ -82,6 +82,7 @@
           letter-spacing: 1.1px;
           padding: 0 0 0 3px;
           outline: none;
+          transition: 500ms;
           &:hover,
           &:focus {
             color: white;
@@ -151,6 +152,7 @@
           line-height: 125%;
           text-decoration: none;
           outline: none;
+          transition: 500ms;
           &:hover,
           &:focus,
           &:active {

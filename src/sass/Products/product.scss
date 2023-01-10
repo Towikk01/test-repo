@@ -25,6 +25,19 @@
     text-decoration: none;
     position: relative;
     outline: none;
+    &:active,
+    &:focus {
+      transform: translateY(-25px);
+      .product-item__texts-wrapper {
+        background-color: #44c697;
+      }
+      .product-item__title {
+        color: #ffffff;
+      }
+      .product-item__price {
+        color: #ffffff;
+      }
+    }
   }
   &__image {
   }
@@ -86,12 +99,12 @@
     &--is-discount {
       color: #ff1b1b;
       font-size: 24px;
-      margin: 0px 15px;
+      margin: 0 15px;
     }
     &--is-old-price {
       color: #bcbdbb;
       font-size: 18px;
-      margin: 5px 0px;
+      margin: 5px 0;
       position: relative;
       &::after {
         content: "";
