@@ -62,16 +62,19 @@
     background: none;
     cursor: pointer;
     outline: none;
+    transition: 800ms;
 
     &:hover,
     &:focus,
     &:active {
       .category-furniture__title::after {
         transform: scaleX(1);
+        transition: 500ms;
       }
 
       .category-furniture__icon {
         color: #44c697;
+        transition: 500ms;
       }
     }
   }

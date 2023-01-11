@@ -25,9 +25,11 @@
     text-decoration: none;
     position: relative;
     outline: none;
+    transition: 800ms;
     &:active,
     &:focus {
       transform: translateY(-25px);
+      transition: 800ms;
       .product-item__texts-wrapper {
         background-color: #44c697;
       }
