@@ -94,6 +94,7 @@
       cursor: pointer;
       display: flex;
       align-items: center;
+      transition: 500ms;
 
       &--is-right {
         transform: rotate(-180deg);
@@ -111,6 +112,7 @@
         outline: none;
         background-color: #1e2e36;
         color: white;
+        transition: 500ms;
       }
     }
   }

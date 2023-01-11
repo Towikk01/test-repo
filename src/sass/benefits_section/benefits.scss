@@ -18,9 +18,12 @@
     overflow: hidden;
     display: flex;
     cursor: pointer;
-    &:hover {
+    outline: none;
+    &:hover,
+    &:focus {
       .benefits-wrapper__menu-window__text {
         transform: none;
+        outline: none;
       }
     }
     &__text {

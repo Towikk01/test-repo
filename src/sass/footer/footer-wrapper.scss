@@ -61,6 +61,7 @@
         list-style: none;
         &-link {
           text-decoration: none;
+          outline: none;
         }
       }
       &__text {
@@ -80,6 +81,13 @@
           font-weight: 700;
           letter-spacing: 1.1px;
           padding: 0 0 0 3px;
+          outline: none;
+          transition: 500ms;
+          &:hover,
+          &:focus {
+            color: white;
+            transition: 400ms;
+          }
         }
       }
 
@@ -115,6 +123,7 @@
         text-decoration: none;
         text-transform: uppercase;
         transition: 500ms;
+        outline: none;
         &::before {
           position: absolute;
           content: "";
@@ -130,7 +139,7 @@
         &:active,
         &:focus {
           color: #44c697;
-          outline: none;
+
           &::before {
             transform: translateX(-10px) translateY(-50%);
           }
@@ -152,6 +161,14 @@
           font-weight: 400;
           line-height: 125%;
           text-decoration: none;
+          outline: none;
+          transition: 500ms;
+          &:hover,
+          &:focus,
+          &:active {
+            color: #44c697;
+            transition: 400ms;
+          }
         }
       }
     }
