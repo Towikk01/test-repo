@@ -19,6 +19,8 @@
     display: flex;
     cursor: pointer;
     outline: none;
+    border: 1px solid black;
+    border-radius: 1%;
     &:hover,
     &:focus {
       .benefits-wrapper__menu-window__text {
@@ -62,5 +64,10 @@
   &__menu-window-picture {
     position: relative;
     z-index: 0;
+    left: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 80%;
   }
 }
