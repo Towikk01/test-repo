@@ -9,14 +9,19 @@
       font-weight: 400;
       letter-spacing: 0.9px;
       line-height: 1.35;
-      margin: 27px 40px 0 0;
+      margin: 27px 40px 55px 0;
       max-width: 395px;
+    }
+    &__picture {
+      width: 1561px;
+      height: 675px;
     }
   }
   &-wrapper__item {
     position: absolute;
     width: 513px;
-    height: 457px;
+
+    height: auto;
     background-color: #ffffff;
     box-sizing: border-box;
     right: 0;
