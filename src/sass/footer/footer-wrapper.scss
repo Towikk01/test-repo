@@ -5,6 +5,8 @@
   &__image {
     margin-left: auto;
     max-width: 100%;
+    width: 1089px;
+    height: 520px;
   }
 
   &-wrapper {
@@ -53,7 +55,7 @@
       flex-direction: row;
       margin-left: 20px;
       margin-top: 51px;
-
+      gap: min(3%, 73px);
       &__social-networks-list {
         display: flex;
         padding: 5px 0 0 0;
@@ -93,13 +95,15 @@
 
       &__list {
         list-style: none;
-        padding: 0 73px 0 0;
         margin: 0;
+        padding-right: 0;
+        flex-basis: 33%;
 
         &-special {
           list-style: none;
           padding: 0 0 0 12px;
           margin: 0;
+          flex-shrink: 0;
         }
       }
       &__item {
@@ -109,6 +113,7 @@
         &-special {
           padding-bottom: 15px;
           display: flex;
+          flex-shrink: 0;
           &-links {
             padding-top: 15px;
           }
