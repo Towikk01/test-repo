@@ -14,13 +14,19 @@
     font-style: normal;
     font-weight: 700;
     width: 586px;
+    height: 350px;
     position: relative;
     overflow: hidden;
     display: flex;
     cursor: pointer;
     outline: none;
-    border: 1px solid black;
-    border-radius: 1%;
+    background: linear-gradient(
+      0deg,
+      rgba(30, 46, 54, 0.5),
+      rgba(30, 46, 54, 0.5)
+    );
+    border-radius: 3px;
+
     &:hover,
     &:focus {
       .benefits-wrapper__menu-window__text {
@@ -69,5 +75,6 @@
     min-width: 100%;
     min-height: 100%;
     opacity: 80%;
+    object-fit: cover;
   }
 }
