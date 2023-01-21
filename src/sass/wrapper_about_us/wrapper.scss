@@ -4,20 +4,22 @@
 
   &__wrapper {
     position: relative;
-
+    display: flex;
+    align-items: center;
     &-image {
       display: block;
       margin-left: auto;
       width: 1407px;
       height: 675px;
+      object-fit: cover;
     }
 
     &__text-wrapper {
       background-color: #ffffff;
-      bottom: 100px;
+
       box-sizing: border-box;
       left: 0;
-      padding: 20px 20px 50px 51px;
+      padding: 80px 20px 50px 51px;
       position: absolute;
       width: 791px;
 
