@@ -28,33 +28,34 @@
     width: 15px;
   }
 
-  &__new {
+  &__text {
     margin: 0;
     text-align: center;
-  }
-  &__text-one {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    margin: 0;
-    font-size: 36px;
-    margin-top: 40px;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-  }
-  &__text-two {
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 125%;
-    margin: 0;
-    padding: 0 0 35px 0;
-    justify-content: center;
-    display: flex;
-    text-align: center;
+
+    &-main {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      margin: 0;
+      font-size: 36px;
+      margin-top: 40px;
+      position: relative;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+    }
+    &-describe {
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 125%;
+      margin: 0;
+      padding: 0 0 35px 0;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+    }
   }
   &__numbers-wrapper {
     position: relative;
@@ -72,17 +73,11 @@
     margin: 0;
     line-height: 1;
     position: relative;
-  }
-  &__number-all {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    margin: 0;
-    position: relative;
-    padding: 8px 0 0 2px;
+
+    &--all {
+      font-size: 20px;
+      padding: 6px 0 0 7px;
+    }
   }
   &__buttons {
     align-items: center;
@@ -161,7 +156,7 @@
       color: #44c697;
     }
   }
-  &__picture-big {
+  .section-picture {
     position: relative;
     z-index: 0;
     top: 0;
