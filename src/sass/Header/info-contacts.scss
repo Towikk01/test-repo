@@ -15,17 +15,18 @@
     display: flex;
     align-items: center;
     gap: 6px;
-  }
-  &-phone-link {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #1e2e36;
-    text-decoration: none;
-  }
-  &-phone-button {
-    transform: rotate(-90deg);
-    border-style: none;
-    background-color: white;
+
+    &-link {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color: #1e2e36;
+      text-decoration: none;
+    }
+    &-button {
+      transform: rotate(-90deg);
+      border-style: none;
+      background-color: white;
+    }
   }
   &__icons {
     display: flex;
