@@ -14,9 +14,8 @@
       object-fit: cover;
     }
 
-    &__text-wrapper {
+    &__text {
       background-color: #ffffff;
-
       box-sizing: border-box;
       left: 0;
       padding: 80px 20px 50px 51px;
@@ -34,14 +33,14 @@
         width: 15px;
       }
 
-      &-item {
+      &-paragraph {
         line-height: 125%;
         font-weight: 400;
         font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 0 0 18px;
 
-        &--is-bold {
+        &__header {
           color: #44c697;
           font-weight: 700;
           text-transform: uppercase;
