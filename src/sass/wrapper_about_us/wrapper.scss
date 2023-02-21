@@ -33,16 +33,16 @@
       width: 15px;
     }
   }
-  &__title {
+  .wrapper-about__text p {
+    line-height: 125%;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 18px;
+  }
+  .wrapper-about__text strong {
     color: #44c697;
     font-weight: 700;
     text-transform: uppercase;
   }
-}
-.wrapper-about__text p {
-  line-height: 125%;
-  font-weight: 400;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0 0 18px;
 }
