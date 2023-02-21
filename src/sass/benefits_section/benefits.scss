@@ -59,6 +59,10 @@
   align-items: flex-start;
   transition: 300ms all ease;
 
+  &__description {
+    color: white;
+  }
+
   &__title {
     font-size: 35px;
     color: #ffffff;
@@ -75,10 +79,6 @@
       position: absolute;
       right: 0;
       max-width: 100%;
-    }
-
-    &-additional {
-      color: white;
     }
   }
 }
