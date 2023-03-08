@@ -1,11 +1,14 @@
+.section-hero-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-hero {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   min-height: 670px;
   height: auto;
-  font-size: 53px;
-  line-height: 64px;
   left: 51px;
   max-width: 462px;
   background-color: #ffffff;
@@ -18,6 +21,14 @@
   box-sizing: border-box;
   overflow: hidden;
 
+  @media (max-width: 767px) {
+    order: 1;
+    position: relative;
+    left: 0;
+    padding: 20px 15px;
+    min-height: 0;
+  }
+
   &::before {
     background-color: #44c697;
     bottom: 0;
@@ -26,22 +37,35 @@
     position: absolute;
     top: 0;
     width: 15px;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__label {
     margin: 0;
     text-align: center;
+    font-size: 53px;
+    line-height: 1.2;
+    @media (max-width: 767px) {
+      font-size: 42px;
+    }
   }
   &__title {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
-    margin: 0;
     font-size: 36px;
-    margin-top: 40px;
+    margin: 40px 0 0;
     position: relative;
     justify-content: center;
     display: flex;
     text-align: center;
+
+    @media (max-width: 767px) {
+      margin: 20px 0 0 0;
+      font-size: 28px;
+    }
   }
   &__description {
     position: relative;
@@ -55,6 +79,11 @@
     justify-content: center;
     display: flex;
     text-align: center;
+
+    @media (max-width: 767px) {
+      font-size: 28px;
+      padding: 0 0 20px 0;
+    }
   }
 
   &__numbers-wrapper {
@@ -63,6 +92,10 @@
     flex-direction: row;
     text-align: center;
     padding-top: 55px;
+
+    @media (max-width: 767px) {
+      padding-top: 30px;
+    }
   }
   &__number-current {
     font-family: Arial, Helvetica, sans-serif;
@@ -74,9 +107,17 @@
     line-height: 1;
     position: relative;
 
+    @media (max-width: 767px) {
+      font-size: 26px;
+    }
+
     &--all {
       font-size: 20px;
       padding: 6px 0 0 7px;
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
     }
   }
   &__buttons {
@@ -165,4 +206,8 @@
   height: 785px;
   width: 100%;
   object-fit: cover;
+
+  @media (max-width: 767px) {
+    height: 30vh;
+  }
 }
