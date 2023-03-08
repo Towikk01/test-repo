@@ -4,7 +4,11 @@
   list-style-type: none;
   justify-content: space-between;
   gap: 12px;
-  padding: 0px 52px;
+  padding: 0 52px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 0 15px;
+  }
   &__item {
     position: relative;
   }

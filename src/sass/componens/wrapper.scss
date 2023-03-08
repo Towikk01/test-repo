@@ -30,8 +30,13 @@
 
   &--is-big {
     padding: 11px 41px;
+    @media (max-width: 767px) {
+      padding: 10px 30px;
+      font-size: 16px;
+      min-width: 165px;
+    }
   }
-  
+
   &--is-small {
     min-width: 210px;
   }
