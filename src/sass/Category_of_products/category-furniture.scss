@@ -11,8 +11,8 @@
     display: none;
   }
   @media (max-width: 375px) {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 10px;
   }
 }
 .category-furniture {
@@ -40,6 +40,10 @@
     text-align: center;
     text-transform: uppercase;
     position: relative;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
     &::after {
       content: "";
       position: absolute;
