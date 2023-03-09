@@ -8,6 +8,7 @@
   @media (max-width: 767px) {
     flex-direction: column;
     padding: 0 15px;
+    display: none;
   }
   &__item {
     position: relative;
