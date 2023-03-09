@@ -9,9 +9,16 @@
   max-width: 1820px;
   box-sizing: border-box;
   display: flex;
-
   align-items: center;
   gap: 30px;
+
+  @media (max-width: 767px) {
+    gap: 15px;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
 
   &__item {
     font-family: Arial, Helvetica, sans-serif;
@@ -24,8 +31,14 @@
     display: flex;
     cursor: pointer;
     outline: none;
-
     border-radius: 3px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      aspect-ratio: 1.67;
+      height: 100%;
+    }
+
     &:after {
       position: absolute;
       content: "";
@@ -59,8 +72,15 @@
   align-items: flex-start;
   transition: 300ms all ease;
 
+  @media (max-width: 767px) {
+    transform: none;
+  }
+
   &__description {
     color: white;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__title {
@@ -69,6 +89,10 @@
     line-height: 125%;
     position: relative;
     margin: 0 0 15px 0;
+
+    @media (max-width: 767px) {
+      font-size: 25px;
+    }
 
     &::after {
       content: "";
