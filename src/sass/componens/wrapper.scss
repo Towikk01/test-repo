@@ -64,6 +64,12 @@
   }
   &--is-normal {
     min-width: 433px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      min-width: auto;
+      margin-top: 10px;
+    }
   }
   &:hover {
     background-color: transparent;
