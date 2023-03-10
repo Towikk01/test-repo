@@ -20,6 +20,11 @@
     padding-top: 15px;
   }
 
+  @media (max-width: 1023px) {
+    gap: 15px;
+    padding: 15px;
+  }
+
   &__item {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -76,6 +81,11 @@
     transform: none;
   }
 
+  @media (max-width: 1023px) {
+    padding: 0 15px 60px 5px;
+    transform: none;
+  }
+
   &__description {
     color: white;
     @media (max-width: 767px) {
@@ -92,6 +102,10 @@
 
     @media (max-width: 767px) {
       font-size: 25px;
+    }
+
+    @media (max-width: 1023px) {
+      font-size: 30px;
     }
 
     &::after {

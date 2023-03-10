@@ -23,6 +23,10 @@
         padding-top: 15px;
         margin: 0;
       }
+
+      @media (max-width: 1023px) {
+        margin: 15px;
+      }
     }
     &__picture {
       width: 1561px;
@@ -33,6 +37,13 @@
         width: 100%;
         aspect-ratio: 1.6;
         height: auto;
+      }
+
+      @media (max-width: 1023px) {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
       }
     }
   }
@@ -55,6 +66,11 @@
       width: 100%;
     }
 
+    @media (max-width: 1023px) {
+      margin: 15px;
+      padding: 15px;
+      width: auto;
+    }
     &:before {
       background-color: #44c697;
       bottom: 0;
@@ -63,6 +79,10 @@
       position: absolute;
       top: 0;
       width: 15px;
+
+      @media (max-width: 1023px) {
+        display: none;
+      }
     }
 
     &-link {
@@ -93,6 +113,9 @@
         line-height: 20px;
       }
 
+      @media (max-width: 1023px) {
+        font-size: 30px;
+      }
       &-link {
         color: black;
       }

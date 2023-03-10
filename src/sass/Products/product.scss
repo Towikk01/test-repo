@@ -6,7 +6,6 @@
   @media (max-width: 375px) {
     font-size: 37px;
   }
-
   @media (hover: hover) {
     &:hover {
       transform: translateY(-25px);
@@ -76,6 +75,10 @@
       font-size: 12px;
     }
 
+    @media (max-width: 1023px) {
+      font-size: 13px;
+    }
+
     &--is-red {
       background: #ff1b1b;
     }
@@ -90,6 +93,11 @@
     @media (max-width: 767px) {
       padding: 10px 15px 0 15px;
       flex-direction: column;
+    }
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      padding: 10px;
     }
   }
   &__title {
@@ -107,6 +115,10 @@
     @media (max-width: 767px) {
       font-size: 18px;
     }
+
+    @media (max-width: 1023px) {
+      font-size: 18px;
+    }
   }
   &__price-wrapper {
     display: flex;
@@ -117,6 +129,12 @@
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
+    }
+
+    @media (max-width: 1023px) {
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
   &__price {
@@ -133,6 +151,10 @@
     @media (max-width: 767px) {
       font-size: 18px;
     }
+
+    @media (max-width: 1023px) {
+      font-size: 20px;
+    }
     &--is-discount {
       color: #ff1b1b;
       font-size: 24px;
@@ -142,12 +164,22 @@
         font-size: 18px;
         margin: 0;
       }
+
+      @media (max-width: 1023px) {
+        font-size: 20px;
+        margin: 0;
+      }
     }
     &--is-old-price {
       color: #bcbdbb;
       font-size: 18px;
       margin: 5px 0px;
       position: relative;
+
+      @media (max-width: 1023px) {
+        font-size: 13px;
+        margin: 5px 0;
+      }
       &::after {
         content: "";
         z-index: -1;
@@ -157,6 +189,10 @@
         height: 1px;
         width: 100%;
         background: #bcbdbb;
+
+        @media (max-width: 1023px) {
+          top: 7px;
+        }
       }
     }
   }

@@ -29,6 +29,12 @@
     min-height: 0;
   }
 
+  @media (max-width: 1023px) {
+    padding: 15px;
+    left: 30px;
+    min-height: auto;
+  }
+
   &::before {
     background-color: #44c697;
     bottom: 0;
@@ -51,6 +57,10 @@
     @media (max-width: 767px) {
       font-size: 42px;
     }
+
+    @media (max-width: 1023px) {
+      font-size: 37px;
+    }
   }
   &__title {
     font-family: Arial, Helvetica, sans-serif;
@@ -65,6 +75,11 @@
     @media (max-width: 767px) {
       margin: 20px 0 0 0;
       font-size: 28px;
+    }
+
+    @media (max-width: 1023px) {
+      font-size: 24px;
+      margin: 30px 0 0;
     }
   }
   &__description {
@@ -84,6 +99,11 @@
       font-size: 28px;
       padding: 0 0 20px 0;
     }
+
+    @media (max-width: 1023px) {
+      padding: 0 0 25px 0;
+      font-size: 25px;
+    }
   }
 
   &__numbers-wrapper {
@@ -95,6 +115,10 @@
 
     @media (max-width: 767px) {
       padding-top: 30px;
+    }
+
+    @media (max-width: 1023px) {
+      padding-top: 20px;
     }
   }
   &__number-current {
@@ -111,12 +135,19 @@
       font-size: 26px;
     }
 
+    @media (max-width: 1023px) {
+      font-size: 24px;
+    }
     &--all {
       font-size: 20px;
       padding: 6px 0 0 7px;
 
       @media (max-width: 767px) {
         font-size: 16px;
+      }
+
+      @media (max-width: 1023px) {
+        font-size: 14px;
       }
     }
   }
@@ -127,6 +158,9 @@
     padding: 12px 0 20px 0;
     cursor: pointer;
 
+    @media (max-width: 1023px) {
+      gap: 15px;
+    }
     &-arrow {
       background-color: #fff;
       border-radius: 50%;
@@ -209,5 +243,10 @@
 
   @media (max-width: 767px) {
     height: 30vh;
+  }
+
+  @media (max-width: 1023px) {
+    height: auto;
+    aspect-ratio: 1.6;
   }
 }
