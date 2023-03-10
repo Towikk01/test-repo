@@ -8,6 +8,10 @@
     flex-direction: column;
     margin-top: 15px;
   }
+
+  @media (max-width: 1023px) {
+    padding-top: 15px;
+  }
   &__image {
     margin-left: auto;
     max-width: 100%;
@@ -18,6 +22,10 @@
     @media (max-width: 767px) {
       width: 100%;
       height: auto;
+    }
+
+    @media (max-width: 1023px) {
+      display: none;
     }
   }
   &-sidebar {
@@ -30,11 +38,21 @@
     flex-direction: column;
     padding: 50px 56px 15px 51px;
 
+    &-logo {
+      width: 100%;
+    }
     @media (max-width: 767px) {
       padding: 15px;
       width: 100%;
       height: 100%;
       position: relative;
+    }
+
+    @media (max-width: 1023px) {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      align-items: center;
     }
   }
 
@@ -85,6 +103,11 @@
       margin: 0;
       padding-top: 15px;
     }
+
+    @media (max-width: 1023px) {
+      margin: 0px;
+      padding: 15px;
+    }
   }
 
   &-list {
@@ -92,6 +115,10 @@
     margin: 0;
     padding-right: 0;
     flex-basis: 33%;
+
+    @media (max-width: 1023px) {
+      padding: 0;
+    }
     &--special {
       list-style: none;
       padding: 0 0 0 12px;
@@ -100,6 +127,9 @@
 
       @media (max-width: 767px) {
         padding: 30px 0 0 0;
+      }
+      @media (max-width: 1023px) {
+        padding: 0;
       }
     }
 
@@ -152,6 +182,9 @@
           outline: none;
           transition: 500ms;
 
+          @media (max-width: 1023px) {
+            font-size: 16px;
+          }
           &:hover,
           &:focus {
             color: white;
