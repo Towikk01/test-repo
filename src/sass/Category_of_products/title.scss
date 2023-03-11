@@ -23,6 +23,11 @@
     font-size: 36px;
   }
 
+  @media (max-width: 1919px) {
+    margin: 0;
+    padding: 15px;
+  }
+
   &__green-box {
     background: #44c697;
     width: 20px;

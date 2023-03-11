@@ -14,6 +14,11 @@
     padding: 15px;
   }
 
+  @media (max-width: 1919px) {
+    padding: 15px;
+    margin: 0;
+  }
+
   &__left-container {
     display: flex;
     align-items: center;
@@ -32,6 +37,10 @@
     @media (max-width: 1439px) {
       flex-direction: column-reverse;
       gap: 15px;
+    }
+
+    @media (max-width: 1919px) {
+      gap: 35px;
     }
   }
   &__logo-link {
