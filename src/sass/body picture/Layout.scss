@@ -35,6 +35,13 @@
     min-height: auto;
   }
 
+  @media (max-width: 1439px) {
+    max-width: 100%;
+    padding-top: 25px;
+    min-height: auto;
+    left: 15px;
+  }
+
   &::before {
     background-color: #44c697;
     bottom: 0;
@@ -45,6 +52,14 @@
     width: 15px;
 
     @media (max-width: 767px) {
+      display: none;
+    }
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+
+    @media (max-width: 1439px) {
       display: none;
     }
   }
@@ -60,6 +75,10 @@
 
     @media (max-width: 1023px) {
       font-size: 37px;
+    }
+
+    @media (max-width: 1439px) {
+      font-size: 36px;
     }
   }
   &__title {
@@ -80,6 +99,12 @@
     @media (max-width: 1023px) {
       font-size: 24px;
       margin: 30px 0 0;
+    }
+
+    @media (max-width: 1439px) {
+      margin: 0;
+      padding: 15px;
+      font-size: 26px;
     }
   }
   &__description {
@@ -104,6 +129,11 @@
       padding: 0 0 25px 0;
       font-size: 25px;
     }
+
+    @media (max-width: 1439px) {
+      font-size: 30px;
+      padding: 15px;
+    }
   }
 
   &__numbers-wrapper {
@@ -119,6 +149,10 @@
 
     @media (max-width: 1023px) {
       padding-top: 20px;
+    }
+
+    @media (max-width: 1439px) {
+      padding-top: 25px;
     }
   }
   &__number-current {
@@ -138,6 +172,10 @@
     @media (max-width: 1023px) {
       font-size: 24px;
     }
+
+    @media (max-width: 1439px) {
+      font-size: 28px;
+    }
     &--all {
       font-size: 20px;
       padding: 6px 0 0 7px;
@@ -147,6 +185,10 @@
       }
 
       @media (max-width: 1023px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 1439px) {
         font-size: 14px;
       }
     }
@@ -248,5 +290,10 @@
   @media (max-width: 1023px) {
     height: auto;
     aspect-ratio: 1.6;
+  }
+
+  @media (max-width: 1439px) {
+    height: auto;
+    width: 100%;
   }
 }

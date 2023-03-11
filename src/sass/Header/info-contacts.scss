@@ -7,6 +7,12 @@
   @media (max-width: 767px) {
     flex-direction: column;
     padding: 0 15px;
+    gap: 30px;
+  }
+
+  @media (max-width: 1439px) {
+    padding: 0 0 0 15px;
+    gap: 15px;
   }
   &__phone {
     color: #1e2e36;
@@ -22,11 +28,22 @@
       padding-bottom: 15px;
     }
 
+    @media (max-width: 1439px) {
+      padding: 0;
+    }
     &-link {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 18px;
       color: #1e2e36;
       text-decoration: none;
+
+      @media (max-width: 1439px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 1439px) {
+        font-size: 15px;
+      }
     }
     &-button {
       transform: rotate(-90deg);
@@ -43,6 +60,11 @@
     padding: 0;
     margin-left: 19px;
     @media (max-width: 767px) {
+      margin-left: 0;
+    }
+
+    @media (max-width: 1439px) {
+      padding: 0;
       margin-left: 0;
     }
   }
