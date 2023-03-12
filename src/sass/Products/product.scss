@@ -76,22 +76,19 @@
     padding: 5px 15px;
     margin: 3px 0;
 
-    @media (max-width: 767px) {
-      font-size: 12px;
+    @media (max-width: 2047px) {
+      font-size: 24px;
     }
-
+    @media (max-width: 1439px) {
+      font-size: 14px;
+    }
     @media (max-width: 1023px) {
       font-size: 13px;
     }
 
-    @media (max-width: 1439px) {
-      font-size: 14px;
+    @media (max-width: 767px) {
+      font-size: 12px;
     }
-
-    @media (max-width: 2047px) {
-      font-size: 24px;
-    }
-
     &--is-red {
       background: #ff1b1b;
     }
@@ -103,19 +100,17 @@
     padding: 15px;
     transition: 300ms all ease;
 
-    @media (max-width: 767px) {
-      padding: 10px 15px 0 15px;
+    @media (max-width: 1439px) {
       flex-direction: column;
+      padding: 10px;
     }
-
     @media (max-width: 1023px) {
       flex-direction: column;
       padding: 10px;
     }
-
-    @media (max-width: 1439px) {
+    @media (max-width: 767px) {
+      padding: 10px 15px 0 15px;
       flex-direction: column;
-      padding: 10px;
     }
   }
   &__title {
@@ -130,24 +125,20 @@
     transition: 300ms all ease;
     width: 100%;
 
-    @media (max-width: 767px) {
-      font-size: 18px;
+    @media (max-width: 2047px) {
+      font-size: 27px;
     }
-
-    @media (max-width: 1023px) {
-      font-size: 18px;
-    }
-
-    @media (max-width: 1439px) {
-      font-size: 20px;
-    }
-
     @media (max-width: 1919px) {
       font-size: 18px;
     }
-
-    @media (max-width: 2047px) {
-      font-size: 27px;
+    @media (max-width: 1439px) {
+      font-size: 20px;
+    }
+    @media (max-width: 1023px) {
+      font-size: 18px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
     }
   }
   &__price-wrapper {
@@ -155,27 +146,24 @@
     width: 100%;
     justify-content: flex-end;
 
-    @media (max-width: 767px) {
-      justify-content: flex-start;
-      align-items: flex-start;
+    @media (max-width: 1919px) {
       flex-direction: column;
+      align-items: end;
     }
-
-    @media (max-width: 1023px) {
-      justify-content: flex-start;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
     @media (max-width: 1439px) {
       flex-direction: row;
       gap: 15px;
       justify-content: flex-start;
     }
-
-    @media (max-width: 1919px) {
+    @media (max-width: 1023px) {
+      justify-content: flex-start;
       flex-direction: column;
-      align-items: end;
+      align-items: flex-start;
+    }
+    @media (max-width: 767px) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
     }
   }
   &__price {
@@ -188,24 +176,20 @@
     text-transform: uppercase;
     margin: 0;
     transition: 300ms all ease;
-
-    @media (max-width: 767px) {
-      font-size: 18px;
+    @media (max-width: 2047px) {
+      font-size: 27px;
     }
-
-    @media (max-width: 1023px) {
-      font-size: 20px;
-    }
-
-    @media (max-width: 1439px) {
-      font-size: 20px;
-    }
-
     @media (max-width: 1919px) {
       font-size: 20px;
     }
-    @media (max-width: 2047px) {
-      font-size: 27px;
+    @media (max-width: 1439px) {
+      font-size: 20px;
+    }
+    @media (max-width: 1023px) {
+      font-size: 20px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
     }
 
     &--is-discount {
@@ -213,22 +197,19 @@
       font-size: 24px;
       margin: 0px 15px;
 
-      @media (max-width: 767px) {
-        font-size: 18px;
+      @media (max-width: 1919px) {
         margin: 0;
       }
-
-      @media (max-width: 1023px) {
-        font-size: 20px;
-        margin: 0;
-      }
-
       @media (max-width: 1439px) {
         font-size: 20px;
         margin: 0;
       }
-
-      @media (max-width: 1919px) {
+      @media (max-width: 1023px) {
+        font-size: 20px;
+        margin: 0;
+      }
+      @media (max-width: 767px) {
+        font-size: 18px;
         margin: 0;
       }
     }
@@ -237,16 +218,15 @@
       font-size: 18px;
       margin: 5px 0px;
       position: relative;
-
+      @media (max-width: 1439px) {
+        font-size: 13px;
+        margin: 5px 0;
+      }
       @media (max-width: 1023px) {
         font-size: 13px;
         margin: 5px 0;
       }
 
-      @media (max-width: 1439px) {
-        font-size: 13px;
-        margin: 5px 0;
-      }
       &::after {
         content: "";
         z-index: -1;
@@ -257,11 +237,10 @@
         width: 100%;
         background: #bcbdbb;
 
-        @media (max-width: 1023px) {
+        @media (max-width: 1439px) {
           top: 7px;
         }
-
-        @media (max-width: 1439px) {
+        @media (max-width: 1023px) {
           top: 7px;
         }
       }

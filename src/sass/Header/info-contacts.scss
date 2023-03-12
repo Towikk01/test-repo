@@ -4,20 +4,20 @@
   flex-direction: row;
   gap: 2px;
   padding: 0 53px;
+  @media (max-width: 2047px) {
+    padding: 15px;
+  }
+  @media (max-width: 1439px) {
+    padding: 0 0 0 15px;
+    gap: 15px;
+  }
+
   @media (max-width: 767px) {
     flex-direction: column;
     padding: 0 15px;
     gap: 30px;
   }
 
-  @media (max-width: 1439px) {
-    padding: 0 0 0 15px;
-    gap: 15px;
-  }
-
-  @media (max-width: 2047px) {
-    padding: 15px;
-  }
   &__phone {
     color: #1e2e36;
     font-family: Arial, Helvetica, sans-serif;
@@ -28,34 +28,29 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    @media (max-width: 767px) {
-      padding-bottom: 15px;
-    }
-
-    @media (max-width: 1439px) {
-      padding: 0;
-    }
-
     @media (max-width: 2047px) {
       font-size: 26px;
       padding: 15px;
     }
+    @media (max-width: 1439px) {
+      padding: 0;
+    }
+    @media (max-width: 767px) {
+      padding-bottom: 15px;
+    }
+
     &-link {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 18px;
       color: #1e2e36;
       text-decoration: none;
 
-      @media (max-width: 1439px) {
-        font-size: 16px;
+      @media (max-width: 2047px) {
+        font-size: 26px;
       }
 
       @media (max-width: 1439px) {
         font-size: 15px;
-      }
-
-      @media (max-width: 2047px) {
-        font-size: 26px;
       }
     }
     &-button {
@@ -72,18 +67,16 @@
     gap: 29px;
     padding: 0;
     margin-left: 19px;
-    @media (max-width: 767px) {
-      margin-left: 0;
+    @media (max-width: 2047px) {
+      padding: 0 15px;
+      gap: 45px;
     }
-
     @media (max-width: 1439px) {
       padding: 0;
       margin-left: 0;
     }
-
-    @media (max-width: 2047px) {
-      padding: 0 15px;
-      gap: 45px;
+    @media (max-width: 767px) {
+      margin-left: 0;
     }
   }
 }

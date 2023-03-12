@@ -3,44 +3,46 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 1919px) {
+    padding: 15px;
+    margin: 0;
+  }
 
-  @media (max-width: 767px) {
+  @media (max-width: 1439px) {
     flex-direction: column;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 15px;
   }
   @media (max-width: 1023px) {
     flex-direction: column;
     padding: 15px;
   }
-
-  @media (max-width: 1919px) {
-    padding: 15px;
-    margin: 0;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   &__left-container {
     display: flex;
     align-items: center;
     gap: 120px;
-    @media (max-width: 767px) {
-      flex-direction: column;
-      gap: 0;
-      align-items: flex-start;
-    }
 
-    @media (max-width: 1023px) {
-      flex-direction: column;
-      gap: 0;
+    @media (max-width: 1919px) {
+      gap: 35px;
     }
 
     @media (max-width: 1439px) {
       flex-direction: column-reverse;
       gap: 15px;
     }
-
-    @media (max-width: 1919px) {
-      gap: 35px;
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      gap: 0;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 0;
+      align-items: flex-start;
     }
   }
   &__logo-link {
@@ -63,24 +65,23 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    @media (max-width: 767px) {
-      padding: 0 15px;
-      max-width: 100%;
-      gap: 22px;
-    }
 
-    @media (max-width: 1023px) {
-      gap: 150px;
+    @media (max-width: 2047px) {
+      padding: 0 15px;
+      gap: 70px;
     }
 
     @media (max-width: 1439px) {
       padding: 15px;
       gap: 20px;
     }
-
-    @media (max-width: 2047px) {
+    @media (max-width: 1023px) {
+      gap: 150px;
+    }
+    @media (max-width: 767px) {
       padding: 0 15px;
-      gap: 70px;
+      max-width: 100%;
+      gap: 22px;
     }
   }
   &__action-buttons-item-cart {
@@ -94,13 +95,12 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    @media (max-width: 2047px) {
+      font-size: 24px;
+    }
 
     @media (max-width: 767px) {
       font-size: 16px;
-    }
-
-    @media (max-width: 2047px) {
-      font-size: 24px;
     }
 
     &:hover {
