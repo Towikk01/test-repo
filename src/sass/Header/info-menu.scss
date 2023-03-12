@@ -23,6 +23,11 @@
     padding: 0 14px 0 0;
     gap: 14px;
   }
+
+  @media (max-width: 2047px) {
+    padding: 15px;
+    gap: 45px;
+  }
   &__item {
     position: relative;
   }
@@ -42,6 +47,11 @@
 
     @media (max-width: 1919px) {
       font-size: 20px;
+    }
+
+    @media (max-width: 2047px) {
+      gap: 45px;
+      font-size: 26px;
     }
     &::after {
       content: "";
