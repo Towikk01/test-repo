@@ -151,6 +151,9 @@
       align-items: end;
     }
     @media (max-width: 1439px) {
+      flex-direction: row;
+      align-items: end;
+      gap: 10px;
     }
     @media (max-width: 1023px) {
       flex-direction: row;
