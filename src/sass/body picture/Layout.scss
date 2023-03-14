@@ -38,6 +38,7 @@
     padding: 15px;
     left: 30px;
     min-height: auto;
+    width: 40%;
   }
   @media (max-width: 767px) {
     order: 1;
@@ -59,12 +60,7 @@
     position: absolute;
     top: 0;
     width: 15px;
-    @media (max-width: 1439px) {
-      display: none;
-    }
-    @media (max-width: 1023px) {
-      display: none;
-    }
+
     @media (max-width: 767px) {
       display: none;
     }
@@ -231,6 +227,7 @@
     }
     @media (max-width: 1023px) {
       gap: 15px;
+      padding: 15px;
     }
 
     @media (max-width: 767px) {

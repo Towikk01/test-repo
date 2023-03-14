@@ -114,7 +114,7 @@
     transform: none;
   }
   @media (max-width: 1023px) {
-    padding: 0 15px 60px 5px;
+    padding: 15px;
     transform: none;
   }
   @media (max-width: 767px) {
@@ -133,6 +133,10 @@
     }
     @media (max-width: 1439px) {
       font-size: 16px;
+    }
+
+    @media (max-width: 1023px) {
+      display: none;
     }
     @media (max-width: 767px) {
       display: none;

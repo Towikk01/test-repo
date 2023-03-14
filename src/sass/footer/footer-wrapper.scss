@@ -58,6 +58,10 @@
       @media (max-width: 1439px) {
         width: 50%;
       }
+
+      @media (max-width: 1023px) {
+        width: 100%;
+      }
       @media (max-width: 767px) {
         width: 100%;
       }
@@ -244,6 +248,9 @@
         @media (max-width: 2047px) {
           font-size: 24px;
         }
+        @media (max-width: 1023px) {
+          font-size: 17px;
+        }
         @media (max-width: 767px) {
           padding-top: 30px;
           font-size: 16px;
@@ -329,6 +336,9 @@
           font-size: 16px;
         }
 
+        @media (max-width: 1023px) {
+          font-size: 24px;
+        }
         &::before {
           position: absolute;
           content: "";
