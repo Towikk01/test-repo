@@ -56,6 +56,12 @@
       font-size: 16px;
       min-width: 165px;
     }
+
+    @media (max-width: 374px) {
+      padding: 10px;
+      font-size: 14px;
+      min-width: auto;
+    }
   }
   &--is-small {
     min-width: 210px;
@@ -68,6 +74,11 @@
     }
     @media (max-width: 767px) {
       min-width: 160px;
+    }
+
+    @media (max-width: 374px) {
+      min-width: auto;
+      font-size: 16px;
     }
   }
 

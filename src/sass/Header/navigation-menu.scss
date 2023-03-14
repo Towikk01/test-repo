@@ -11,6 +11,11 @@
   @media (max-width: 767px) {
     flex-direction: column;
   }
+
+  @media (max-width: 374px) {
+    flex-direction: column;
+    gap: 10px;
+  }
   &__item {
     position: relative;
   }
@@ -67,6 +72,10 @@
     position: relative;
     @media (max-width: 2047px) {
       font-size: 26px;
+
+      @media (max-width: 374px) {
+        font-size: 14px;
+      }
     }
   }
 

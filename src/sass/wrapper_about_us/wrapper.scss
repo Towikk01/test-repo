@@ -41,6 +41,10 @@
     aspect-ratio: 1.6;
     height: auto;
   }
+
+  @media (max-width: 374px) {
+    display: none;
+  }
 }
 .wrapper-about {
   position: relative;

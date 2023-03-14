@@ -17,6 +17,9 @@
     padding: 0 15px;
     gap: 30px;
   }
+  @media (max-width: 374px) {
+    gap: 5px;
+  }
 
   &__phone {
     color: #1e2e36;

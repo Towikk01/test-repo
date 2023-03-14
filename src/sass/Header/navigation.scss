@@ -83,6 +83,10 @@
       max-width: 100%;
       gap: 22px;
     }
+
+    @media (max-width: 374px) {
+      padding: 0;
+    }
   }
   &__action-buttons-item-cart {
     background-color: #ffffff;
