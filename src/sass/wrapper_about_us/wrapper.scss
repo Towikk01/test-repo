@@ -37,9 +37,7 @@
     height: auto;
   }
   @media (max-width: 767px) {
-    width: 100%;
-    aspect-ratio: 1.6;
-    height: auto;
+    display: none;
   }
 
   @media (max-width: 374px) {
