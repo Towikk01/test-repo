@@ -21,9 +21,14 @@
   @media (max-width: 374px) {
     flex-direction: column;
     gap: 10px;
+    padding: 0;
   }
   &__item {
     position: relative;
+
+    @media (max-width: 375px) {
+      padding: 2px 15px;
+    }
   }
 
   &__item-link {

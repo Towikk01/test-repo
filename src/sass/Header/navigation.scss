@@ -6,6 +6,7 @@
   @media (max-width: 1919px) {
     padding: 15px;
     margin: 0;
+    flex-direction: column;
   }
 
   @media (max-width: 1439px) {
@@ -18,8 +19,7 @@
   }
   @media (max-width: 767px) {
     flex-direction: column;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0;
   }
 
   &__left-container {
@@ -44,20 +44,19 @@
       gap: 0;
       align-items: flex-start;
     }
+
+    @media (max-width: 374px) {
+      padding: 0 15px;
+    }
   }
   &__logo-link {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    @media (max-width: 767px) {
-      max-width: 100%;
-    }
-
     svg {
-      @media (max-width: 767px) {
-        max-width: auto;
-      }
+      width: 100%;
+      height: 100%;
     }
   }
   &__action-buttons {
@@ -86,10 +85,11 @@
       padding: 0 15px;
       max-width: 100%;
       gap: 22px;
+      padding: 15px;
     }
 
     @media (max-width: 374px) {
-      padding: 0;
+      padding: 15px;
     }
   }
   &__action-buttons-item-cart {
