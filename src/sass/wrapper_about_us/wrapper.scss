@@ -67,6 +67,10 @@
     padding: 80px 20px 50px 51px;
     position: absolute;
     width: 791px;
+
+    @media (max-width: 1919px) {
+      padding: 15px;
+    }
     @media (max-width: 1439px) {
       padding: 15px;
       width: 100%;
