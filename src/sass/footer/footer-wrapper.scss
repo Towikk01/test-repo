@@ -104,6 +104,10 @@
     @media (max-width: 2047px) {
       padding-top: 218px;
     }
+
+    @media (max-width: 1023px) {
+      padding-top: 50px;
+    }
     @media (max-width: 767px) {
       flex-direction: column;
       gap: 15px;
@@ -350,9 +354,11 @@
         }
 
         @media (max-width: 1023px) {
-          font-size: 24px;
+          font-size: 22px;
         }
-
+        @media (max-width: 767px) {
+          font-size: 20px;
+        }
         @media (max-width: 374px) {
           font-size: 18px;
         }

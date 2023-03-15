@@ -38,7 +38,7 @@
     padding: 15px;
     left: 30px;
     min-height: auto;
-    width: 40%;
+    max-width: 40%;
   }
   @media (max-width: 767px) {
     order: 1;
@@ -46,6 +46,7 @@
     left: 0;
     padding: 15px;
     min-height: 0;
+    max-width: 100%;
   }
 
   @media (max-width: 374px) {
