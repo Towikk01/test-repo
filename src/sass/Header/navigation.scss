@@ -33,15 +33,15 @@
 
     @media (max-width: 1439px) {
       flex-direction: column-reverse;
-      gap: 15px;
+      gap: 5px;
     }
     @media (max-width: 1023px) {
       flex-direction: column;
-      gap: 0;
+      gap: 10px;
     }
     @media (max-width: 767px) {
       flex-direction: column;
-      gap: 0;
+      gap: 15px;
       align-items: flex-start;
     }
 
