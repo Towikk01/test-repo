@@ -5,12 +5,6 @@
   box-sizing: border-box;
   display: flex;
   flex-flow: column;
-
-  @media (max-width: 2047px) {
-    max-width: 100%;
-    align-items: center;
-    padding: 15px;
-  }
 }
 .default-button {
   font-family: Arial, Helvetica, sans-serif;
@@ -40,10 +34,7 @@
 
   &--is-big {
     padding: 11px 41px;
-    @media (max-width: 2047px) {
-      padding: 15px;
-      font-size: 26px;
-    }
+
     @media (max-width: 1919px) {
       padding: 15px;
     }
@@ -64,10 +55,6 @@
   }
   &--is-small {
     min-width: 210px;
-
-    @media (max-width: 2047px) {
-      font-size: 30px;
-    }
 
     @media (max-width: 1439px) {
       font-size: 20px;

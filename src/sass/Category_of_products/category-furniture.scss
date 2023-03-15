@@ -44,9 +44,6 @@
     text-transform: uppercase;
     position: relative;
 
-    @media (max-width: 2047px) {
-      font-size: 30px;
-    }
     @media (max-width: 1023px) {
       font-size: 22px;
     }

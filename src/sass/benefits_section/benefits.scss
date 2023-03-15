@@ -11,11 +11,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  @media (max-width: 2047px) {
-    padding: 15px;
-    margin: 0;
-    max-width: 100%;
-  }
+
   @media (max-width: 1919px) {
     padding: 15px;
     gap: 15px;
@@ -49,10 +45,7 @@
     cursor: pointer;
     outline: none;
     border-radius: 3px;
-    @media (max-width: 2047px) {
-      width: 100%;
-      height: 100%;
-    }
+
     @media (max-width: 1919px) {
       width: auto;
       aspect-ratio: 1.5;
@@ -101,10 +94,7 @@
   flex-flow: column;
   align-items: flex-start;
   transition: 300ms all ease;
-  @media (max-width: 2047px) {
-    transform: translateY(170px);
-    padding: 15px;
-  }
+
   @media (max-width: 1919px) {
     transform: translateY(115px);
     padding: 15px;
@@ -128,9 +118,7 @@
 
   &__description {
     color: white;
-    @media (max-width: 2047px) {
-      font-size: 30px;
-    }
+
     @media (max-width: 1919px) {
       font-size: 20px;
     }
@@ -153,9 +141,6 @@
     position: relative;
     margin: 0 0 15px 0;
 
-    @media (max-width: 2047px) {
-      font-size: 46px;
-    }
     @media (max-width: 1919px) {
       font-size: 36px;
     }
