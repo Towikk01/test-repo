@@ -243,6 +243,10 @@
         padding: 5px 0 0 0;
         gap: 4px;
         list-style: none;
+
+        @media (max-width: 374px) {
+          justify-content: center;
+        }
       }
       &-text {
         font-size: 19px;
@@ -271,6 +275,10 @@
       &-phones {
         display: flex;
         flex-direction: column;
+
+        @media (max-width: 374px) {
+          gap: 25px;
+        }
 
         &-number {
           color: #44c697;
@@ -347,7 +355,7 @@
           font-size: 22px;
         }
         @media (max-width: 767px) {
-          font-size: 18px;
+          font-size: 20px;
         }
         @media (max-width: 374px) {
           font-size: 14px;
