@@ -1,6 +1,9 @@
 .section-hero-wrapper {
   display: flex;
   flex-direction: column;
+  @media (max-width: 374px) {
+    padding-top: 30px;
+  }
 }
 
 .section-hero {
