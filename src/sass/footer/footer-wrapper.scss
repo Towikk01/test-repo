@@ -168,6 +168,16 @@
       margin: 0;
       padding-top: 15px;
     }
+    @media (max-width: 374px) {
+      justify-content: center;
+      align-self: center;
+    }
+
+    &-normal-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+    }
   }
 
   &-list {
@@ -368,6 +378,7 @@
         }
         @media (max-width: 374px) {
           font-size: 14px;
+          white-space: nowrap;
         }
         &::before {
           position: absolute;
