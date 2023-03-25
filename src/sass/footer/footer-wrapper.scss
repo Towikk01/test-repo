@@ -110,9 +110,12 @@
     }
 
     @media (max-width: 767px) {
-      flex-direction: column;
+      flex-direction: row;
       gap: 15px;
       padding: 15px 0 0 0;
+    }
+    @media (max-width: 374px) {
+      flex-direction: column;
     }
 
     &-item {
@@ -205,7 +208,7 @@
       @media (max-width: 374px) {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 25px;
       }
     }
 
