@@ -81,5 +81,10 @@
     @media (max-width: 767px) {
       margin-left: 0;
     }
+
+    @media (max-width: 374px) {
+      margin: 0;
+      padding: 10px;
+    }
   }
 }
