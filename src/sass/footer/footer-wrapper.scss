@@ -164,9 +164,11 @@
       align-self: flex-start;
     }
     @media (max-width: 767px) {
-      flex-direction: column;
       margin: 0;
       padding-top: 15px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     @media (max-width: 374px) {
       justify-content: center;
@@ -214,6 +216,7 @@
         flex-direction: column;
         gap: 5px;
         padding: 15px;
+        white-space: nowrap;
       }
       @media (max-width: 374px) {
         display: flex;
