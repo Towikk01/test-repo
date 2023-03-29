@@ -14,15 +14,10 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 3px;
+    bottom: 0;
     background-color: #1e2e36;
     height: 1px;
     opacity: 0.6;
-  }
-  @media (max-width: 767px) {
-    &::after {
-      bottom: -5px;
-    }
   }
 
   @media (max-width: 1439px) {
@@ -36,6 +31,6 @@
 
   @media (max-width: 767px) {
     font-size: 16px;
-    padding-top: 15px;
+    padding: 15px 0;
   }
 }
