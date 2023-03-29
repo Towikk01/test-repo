@@ -15,7 +15,7 @@
   @media (max-width: 767px) {
     flex-direction: column;
     padding: 0 15px;
-    gap: 5px;
+    gap: 15px;
   }
 
   &__phone {
@@ -33,7 +33,8 @@
       padding: 0;
     }
     @media (max-width: 767px) {
-      padding-bottom: 15px;
+      padding: 0;
+      margin: 0;
     }
 
     &-link {
@@ -75,7 +76,7 @@
       margin-left: 0;
     }
     @media (max-width: 767px) {
-      margin-left: 0;
+      margin: 0;
     }
 
     @media (max-width: 374px) {
