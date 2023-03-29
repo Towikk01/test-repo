@@ -49,15 +49,10 @@
     text-transform: uppercase;
     position: relative;
     color: black;
-
-    @media (max-width: 1023px) {
-      font-size: 22px;
-    }
-    @media (max-width: 767px) {
+    @media (max-width: 1439px) {
       font-size: 18px;
     }
-
-    &:after {
+    g &:after {
       content: "";
       position: absolute;
       height: 3px;
