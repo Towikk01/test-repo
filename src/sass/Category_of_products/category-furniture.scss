@@ -10,12 +10,11 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
   @media (max-width: 767px) {
-    grid-template-columns: repeat(2, 3fr);
-  }
-  @media (max-width: 375px) {
-    grid-template-columns: repeat(2, 3fr);
-    gap: 10px;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 0;
+    padding: 10px;
   }
 }
 .category-furniture {
