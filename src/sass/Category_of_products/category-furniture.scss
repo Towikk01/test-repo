@@ -30,7 +30,11 @@
     color: #1e2e36;
     margin-top: 1px;
     transition: 300ms ease all;
-
+    
+    @media (max-width: 1439px) {
+      width: 90px;
+      height: 90px;
+    }
     @media (max-width: 1023px) {
       width: 80px;
       height: 80px;
@@ -49,15 +53,10 @@
     text-transform: uppercase;
     position: relative;
     color: black;
-
-    @media (max-width: 1023px) {
-      font-size: 22px;
-    }
-    @media (max-width: 767px) {
+    @media (max-width: 1439px) {
       font-size: 18px;
     }
-
-    &:after {
+    g &:after {
       content: "";
       position: absolute;
       height: 3px;
