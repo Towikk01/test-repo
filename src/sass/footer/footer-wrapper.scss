@@ -161,12 +161,24 @@
     @media (max-width: 1023px) {
       margin: 0px;
       padding: 15px;
-      align-self: flex-start;
+      align-self: center;
     }
     @media (max-width: 767px) {
-      flex-direction: column;
       margin: 0;
       padding-top: 15px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media (max-width: 374px) {
+      justify-content: center;
+      align-self: center;
+    }
+
+    &-normal-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
     }
   }
 
@@ -178,6 +190,7 @@
 
     @media (max-width: 1023px) {
       padding: 0;
+      white-space: nowrap;
     }
     &--special {
       list-style: none;
@@ -199,12 +212,14 @@
       }
       @media (max-width: 1023px) {
         padding: 0;
+        white-space: nowrap;
       }
       @media (max-width: 767px) {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
         padding: 15px;
+        white-space: nowrap;
       }
       @media (max-width: 374px) {
         display: flex;
@@ -279,13 +294,14 @@
 
       &-links {
         padding-top: 15px;
+        text-align: center;
       }
       &-phones {
         display: flex;
         flex-direction: column;
 
         @media (max-width: 1023px) {
-          gap: 25px;
+          gap: 15px;
         }
 
         &-number {
@@ -329,11 +345,13 @@
         }
         @media (max-width: 1439px) {
           font-size: 19px;
+          gap: 10px;
           padding: 0;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
           font-size: 18px;
         }
+
         @media (max-width: 374px) {
           font-size: 14px;
         }
@@ -364,13 +382,14 @@
         }
 
         @media (max-width: 1023px) {
-          font-size: 20px;
+          font-size: 18px;
         }
         @media (max-width: 767px) {
           font-size: 20px;
         }
         @media (max-width: 374px) {
           font-size: 14px;
+          white-space: nowrap;
         }
         &::before {
           position: absolute;
