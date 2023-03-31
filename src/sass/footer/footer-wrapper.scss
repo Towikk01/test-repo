@@ -164,9 +164,21 @@
       align-self: center;
     }
     @media (max-width: 767px) {
-      flex-direction: column;
       margin: 0;
       padding-top: 15px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @media (max-width: 374px) {
+      justify-content: center;
+      align-self: center;
+    }
+
+    &-normal-list {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
     }
   }
 
@@ -204,8 +216,9 @@
       @media (max-width: 767px) {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
         padding: 15px;
+        white-space: nowrap;
       }
       @media (max-width: 374px) {
         display: flex;
@@ -286,7 +299,7 @@
         flex-direction: column;
 
         @media (max-width: 1023px) {
-          gap: 25px;
+          gap: 15px;
         }
 
         &-number {
@@ -335,6 +348,8 @@
         }
         @media (max-width: 1023px) {
           font-size: 18px;
+          padding: 0;
+          gap: 10px;
         }
 
         @media (max-width: 374px) {
@@ -374,6 +389,7 @@
         }
         @media (max-width: 374px) {
           font-size: 14px;
+          white-space: nowrap;
         }
         &::before {
           position: absolute;
