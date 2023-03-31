@@ -208,6 +208,7 @@
         flex-direction: column;
         display: flex;
         gap: 30px;
+        align-items: flex-start;
       }
       @media (max-width: 1023px) {
         padding: 0;
@@ -254,6 +255,7 @@
         }
 
         @media (max-width: 1439px) {
+          gap: 10px;
         }
         @media (max-width: 767px) {
           padding-bottom: 30px;
@@ -342,14 +344,12 @@
           font-size: 20px;
         }
         @media (max-width: 1439px) {
-          font-size: 18px;
-          gap: 5px;
+          font-size: 19px;
+          gap: 10px;
           padding: 0;
         }
         @media (max-width: 1023px) {
           font-size: 18px;
-          padding: 0;
-          gap: 10px;
         }
 
         @media (max-width: 374px) {
