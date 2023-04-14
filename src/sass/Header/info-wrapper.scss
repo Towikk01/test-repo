@@ -14,7 +14,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 3px;
+    bottom: 0;
     background-color: #1e2e36;
     height: 1px;
     opacity: 0.6;
@@ -23,14 +23,15 @@
   @media (max-width: 1439px) {
     font-size: 22px;
     flex-direction: column;
+    padding: 10px 0;
   }
   @media (max-width: 1023px) {
     flex-direction: column;
     font-size: 20px;
   }
 
-  @media (max-width: 374px) {
+  @media (max-width: 767px) {
     font-size: 16px;
-    padding-top: 15px;
+    padding: 15px 0;
   }
 }
