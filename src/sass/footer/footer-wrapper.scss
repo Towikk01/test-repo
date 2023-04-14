@@ -52,8 +52,15 @@
     flex-direction: column;
     padding: 50px 56px 15px 51px;
 
+    a {
+      align-self: center;
+      padding-top: 15px;
+    }
     &-logo {
       width: 100%;
+      @media (max-width: 1919px) {
+        width: 300px;
+      }
 
       @media (max-width: 1439px) {
         max-width: 300px;
