@@ -8,10 +8,30 @@
   width: 100%;
   max-width: 1820px;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   align-items: center;
   gap: 30px;
+
+  @media (max-width: 1919px) {
+    padding: 15px;
+    gap: 15px;
+    margin: 0;
+  }
+  @media (max-width: 1439px) {
+    padding: 15px;
+    gap: 15px;
+  }
+  @media (max-width: 1023px) {
+    gap: 15px;
+    padding: 15px;
+  }
+  @media (max-width: 767px) {
+    gap: 15px;
+    flex-direction: column;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+  }
 
   &__item {
     font-family: Arial, Helvetica, sans-serif;
@@ -23,8 +43,24 @@
     display: flex;
     cursor: pointer;
     outline: none;
-
     border-radius: 3px;
+
+    @media (max-width: 1919px) {
+      width: auto;
+      aspect-ratio: 1.5;
+      height: auto;
+    }
+    @media (max-width: 1439px) {
+      aspect-ratio: 1;
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+      aspect-ratio: 1.67;
+      height: 100%;
+    }
+
     &:after {
       position: absolute;
       content: "";
@@ -58,8 +94,43 @@
   align-items: flex-start;
   transition: 300ms all ease;
 
+  @media (max-width: 1919px) {
+    transform: translateY(115px);
+    padding: 15px;
+  }
+  @media (max-width: 1439px) {
+    padding: 15px;
+    transform: translateY(110px);
+  }
+  @media (max-width: 1023px) {
+    padding: 15px;
+    transform: none;
+  }
+  @media (max-width: 767px) {
+    transform: none;
+    padding: 15px;
+  }
+
+  @media (max-width: 374px) {
+    padding: 15px;
+  }
+
   &__description {
     color: white;
+
+    @media (max-width: 1919px) {
+      font-size: 18px;
+    }
+    @media (max-width: 1439px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__title {
@@ -68,6 +139,21 @@
     line-height: 125%;
     position: relative;
     margin: 0 0 15px 0;
+
+    @media (max-width: 1919px) {
+      font-size: 30px;
+    }
+    @media (max-width: 1439px) {
+      font-size: 24px;
+      margin: 0;
+      padding: 5px;
+    }
+    @media (max-width: 1023px) {
+      font-size: 25px;
+    }
+    @media (max-width: 767px) {
+      font-size: 25px;
+    }
 
     &::after {
       content: "";
@@ -90,4 +176,8 @@
   min-height: 100%;
 
   object-fit: cover;
+
+  @media (max-width: 1439px) {
+    aspect-ratio: 1;
+  }
 }

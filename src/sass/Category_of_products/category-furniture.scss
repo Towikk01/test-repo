@@ -10,9 +10,11 @@
   &::-webkit-scrollbar {
     display: none;
   }
-  @media (max-width: 375px) {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(3, 2fr);
+    gap: 0;
+    padding: 10px;
   }
 }
 .category-furniture {
@@ -27,6 +29,15 @@
     color: #1e2e36;
     margin-top: 1px;
     transition: 300ms ease all;
+    
+    @media (max-width: 1439px) {
+      width: 90px;
+      height: 90px;
+    }
+    @media (max-width: 1023px) {
+      width: 80px;
+      height: 80px;
+    }
   }
   &__title {
     align-self: center;
@@ -40,7 +51,11 @@
     text-align: center;
     text-transform: uppercase;
     position: relative;
-    &::after {
+    color: black;
+    @media (max-width: 1439px) {
+      font-size: 18px;
+    }
+    g &:after {
       content: "";
       position: absolute;
       height: 3px;

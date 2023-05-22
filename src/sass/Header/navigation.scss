@@ -2,24 +2,102 @@
   padding: 12px 53px 10px;
   display: flex;
   align-items: center;
-  padding-top: 12px;
   justify-content: space-between;
+  @media (max-width: 1919px) {
+    padding: 15px;
+    margin: 0;
+    flex-direction: row;
+  }
+  @media (max-width: 1439px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    padding: 0;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 0;
+    align-items: flex-start;
+  }
 
   &__left-container {
     display: flex;
     align-items: center;
     gap: 120px;
+
+    @media (max-width: 1919px) {
+      gap: 35px;
+    }
+
+    @media (max-width: 1439px) {
+      flex-direction: column-reverse;
+      gap: 5px;
+    }
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+      width: 100%;
+    }
+
+    @media (max-width: 374px) {
+      padding: 0;
+    }
   }
   &__logo-link {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: auto;
+
+    @media (max-width: 1919px) {
+      width: 300px;
+    }
+
+    @media (max-width: 1439px) {
+      max-width: 300px;
+      align-self: center;
+    }
+
+    @media (max-width: 767px) {
+      padding: 15px;
+      box-sizing: border-box;
+    }
   }
   &__action-buttons {
     list-style-type: none;
     display: flex;
     align-items: center;
     gap: 30px;
+    box-sizing: border-box;
+
+    @media (max-width: 1439px) {
+      padding: 15px;
+      gap: 50px;
+      margin: 0;
+    }
+    @media (max-width: 1023px) {
+      gap: 150px;
+      width: 100%;
+      justify-content: center;
+      margin: 0;
+    }
+    @media (max-width: 767px) {
+      max-width: 100%;
+      gap: 22px;
+      padding: 15px;
+    }
+
+    @media (max-width: 374px) {
+      padding: 15px 0;
+    }
   }
   &__action-buttons-item-cart {
     background-color: #ffffff;
@@ -32,6 +110,12 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    color: black;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+
     &:hover {
       cursor: pointer;
     }

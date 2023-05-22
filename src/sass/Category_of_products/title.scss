@@ -8,6 +8,33 @@
   position: relative;
   margin-bottom: 35px;
 
+  @media (max-width: 1919px) {
+    margin: 0;
+    padding: 15px;
+    font-size: 40px;
+  }
+  @media (max-width: 1439px) {
+    margin: 0;
+    padding: 15px;
+    font-size: 36px;
+  }
+  @media (max-width: 1023px) {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  @media (max-width: 767px) {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  @media (max-width: 374px) {
+    font-size: 28px;
+    margin: 0;
+    padding: 15px;
+  }
+
+
   &::before {
     content: "";
     background: #44c697;

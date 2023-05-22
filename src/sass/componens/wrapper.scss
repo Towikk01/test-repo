@@ -6,7 +6,6 @@
   display: flex;
   flex-flow: column;
 }
-
 .default-button {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #44c697;
@@ -28,12 +27,50 @@
   max-width: 100%;
   cursor: pointer;
 
+  @media (max-width: 767px) {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
   &--is-big {
     padding: 11px 41px;
+
+    @media (max-width: 1919px) {
+      padding: 15px;
+    }
+    @media (max-width: 1439px) {
+      padding: 15px;
+      font-size: 18px;
+    }
+    @media (max-width: 767px) {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 374px) {
+      padding: 10px;
+      font-size: 14px;
+      min-width: auto;
+    }
   }
-  
   &--is-small {
     min-width: 210px;
+
+    @media (max-width: 1439px) {
+      font-size: 20px;
+    }
+    @media (max-width: 1023px) {
+      min-width: auto;
+      font-size: 20px;
+    }
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 374px) {
+      min-width: auto;
+      font-size: 16px;
+    }
   }
 
   &:hover {
@@ -50,6 +87,12 @@
   }
   &--is-normal {
     min-width: 433px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      min-width: auto;
+      margin-top: 10px;
+    }
   }
   &:hover {
     background-color: transparent;
