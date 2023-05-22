@@ -21,7 +21,7 @@
     margin-left: auto;
     max-width: 100%;
     width: 1089px;
-    height: 520px;
+
     object-fit: cover;
 
     @media (max-width: 1919px) {
@@ -42,9 +42,8 @@
     }
   }
   &-sidebar {
-    position: absolute;
-    width: 831px;
-    height: 520px;
+    max-width: 831px;
+    width: 43.281%;
     background-color: #1e2e36;
     box-sizing: border-box;
     display: flex;

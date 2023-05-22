@@ -34,7 +34,9 @@
     padding: 15px;
   }
 
-  &__green-box {
+
+  &::before {
+    content: "";
     background: #44c697;
     width: 20px;
     height: 50px;
@@ -42,8 +44,9 @@
     position: absolute;
     z-index: -1;
     transform: translate(-5px, 4px);
-    @media (max-width: 767px) {
-      height: 37px;
-    }
+  }
+
+  @media (max-width: 767px) {
+    font-size: 37px;
   }
 }

@@ -15,7 +15,7 @@
 .about-image {
   display: block;
   margin-left: auto;
-  width: 1407px;
+
   height: 675px;
   object-fit: cover;
 
@@ -53,7 +53,8 @@
     left: 0;
     padding: 80px 20px 50px 51px;
     position: absolute;
-    width: 791px;
+    max-width: 791px;
+    width: 41.979%;
 
     @media (max-width: 1919px) {
       padding: 15px;
